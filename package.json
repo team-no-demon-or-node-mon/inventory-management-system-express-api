@@ -1,7 +1,11 @@
 {
   "name": "inventory-management-system-express-api",
+  "engines": {
+    "node": "8.9.1",
+    "npm": "6.4.1"
+  },
   "version": "0.0.1",
-  "description": "",
+  "description": "Team No Demon or Node mon",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
@@ -14,7 +18,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "bcrypt": "^1.0.3",
+    "bcrypt": "^2.0.0",
     "body-parser": "^1.18.2",
     "cors": "^2.8.4",
     "dotenv": "^4.0.0",
@@ -32,5 +36,17 @@
     "mocha": "^4.0.1",
     "nodemon": "^1.12.1",
     "standard": "^10.0.3"
-  }
+  },
+  "directories": {
+    "lib": "lib",
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ceconley/inventory-management-system-express-api.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ceconley/inventory-management-system-express-api/issues"
+  },
+  "homepage": "https://github.com/ceconley/inventory-management-system-express-api#readme"
 }
