@@ -4,11 +4,29 @@ item, create an item, or update an item.
 
 Users must first sign up and sign in before gaining access to inventory tools.
 
+API Endpoints
+
+Authentication
+Verb | URI | Header | Body
+POST | /sign-up | N/A | Credentials
+POST | /sign-on | N/A | Credentials
+PATCH | /change-password | Token | Password
+DELTE | /sign-out | Token | N/A
+
+Inventory Actions
+Verb | URI | Header | Body
+POST- | /items | Token | upc, description, price, cost, quantity, ads
+PATCH- | /items/:id | Token | id, upc, description, price, cost, quantity, ads
+DELETE- | /items/:id | Token | id
+GET- | /items | Token | N/A
+GET- | /items/:id | Token | id
+
 Link to front-end repo:
 https://github.com/ceconley/inventory-management-system-client
 
 Deployed heroku: https://pure-headland-95535.herokuapp.com/
 Deployed gh-pages: https://ceconley.github.io/inventory-management-system-client/
+
 ERD: https://i.imgur.com/NYlt28V.jpg
 
 Technologies used: express, mongoDB, mongoose, handlebars, bootstrap, jQuery,
