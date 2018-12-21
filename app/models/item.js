@@ -31,7 +31,19 @@ const itemSchema = new mongoose.Schema({
     required: true
   }
 }, {
-  timestamps: true
+  timestamps: true,
+  toObject: { virtuals: true },
+  toJSON: { virtuals: true }
+})
+
+itemSchema.set('toObject', {virtuals: true})
+
+itemSchema.virtual('needsReplenishment?').get(function () {
+  if (this.quantity < 2 * this.ads) {
+    return 'Order'
+  } else {
+    return ''
+  }
 })
 
 module.exports = mongoose.model('Item', itemSchema)
