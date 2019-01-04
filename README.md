@@ -8,6 +8,7 @@ API Endpoints
 
 Authentication
 Verb | URI | Header | Body
+--- | --- | --- | ---
 POST | /sign-up | N/A | Credentials
 POST | /sign-on | N/A | Credentials
 PATCH | /change-password | Token | Password
@@ -15,6 +16,7 @@ DELTE | /sign-out | Token | N/A
 
 Inventory Actions
 Verb | URI | Header | Body
+--- | --- | --- | ---
 POST- | /items | Token | upc, description, price, cost, quantity, ads
 PATCH- | /items/:id | Token | id, upc, description, price, cost, quantity, ads
 DELETE- | /items/:id | Token | id
