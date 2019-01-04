@@ -7,16 +7,25 @@ Users must first sign up and sign in before gaining access to inventory tools.
 API Endpoints
 
 Authentication:
+
 POST | /sign-up | Header- N/A | Body- Credentials
+
 POST | /sign-on | Header-N/A |Body- Credentials
+
 PATCH | /change-password | Header- Token |Body- Password
+
 DELTE | /sign-out | Header- Token |Body- N/A
 
 Inventory Actions:
+
 POST | /items |Header- Token |Body- upc, description, price, cost, quantity, ads
+
 PATCH | /items/:id |Header- Token |Body- id, upc, description, price, cost, quantity, ads
+
 DELETE | /items/:id |Header- Token |Body- id
+
 GET | /items | Token |Header- N/A | Body- N/A
+
 GET | /items/:id |Header- Token |Body- id
 
 
