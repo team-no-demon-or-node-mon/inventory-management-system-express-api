@@ -1,69 +1,87 @@
-The app is an inventory management system meant to keep track of store items by
+# Nozama Invetory Management System API
+
+##### By Team No Demon or Node Mon
+The app is an inventory management system meant to keep track of items by
 allowing the user to show the entire inventory, find a specific item, delete an
 item, create an item, or update an item.
 
 Users must first sign up and sign in before gaining access to inventory tools.
 
-API Endpoints
+### API Endpoints
 
-Authentication:
+##### Authentication:
 
-POST | /sign-up | Header- N/A | Body- Credentials
-
-POST | /sign-on | Header-N/A |Body- Credentials
-
-PATCH | /change-password | Header- Token |Body- Password
-
-DELTE | /sign-out | Header- Token |Body- N/A
-
-Inventory Actions:
-
-POST | /items |Header- Token |Body- upc, description, price, cost, quantity, ads
-
-PATCH | /items/:id |Header- Token |Body- id, upc, description, price, cost, quantity, ads
-
-DELETE | /items/:id |Header- Token |Body- id
-
-GET | /items | Token |Header- N/A | Body- N/A
-
-GET | /items/:id |Header- Token |Body- id
+| Action        | Path             | Header Contents | Body Contents |
+| ------------- |------------------| ----------------|---------------|
+| POST          | /sign-up         | N/A             | Credentials   |
+| POST          | /sign-on         | N/A             | Credentials   |
+| PATCH         | /change-password | Token           | Password      |
+| DELETE        | /sign-out        | Token           | N/A           |
 
 
-Link to front-end repo:
-https://github.com/ceconley/inventory-management-system-client
 
-Deployed heroku: https://pure-headland-95535.herokuapp.com/
-Deployed gh-pages: https://ceconley.github.io/inventory-management-system-client/
+##### Inventory Actions:
 
-ERD: https://i.imgur.com/NYlt28V.jpg
+| Action        | Path             | Header Contents | Body Contents |
+| ------------- |------------------| ----------------|---------------|
+| POST          | /items           | Token           | upc, description, price, cost, quantity, ads |
+| PATCH         | /items/:id       | Token           | id, upc, description, price, cost, quantity, ads |
+| DELETE        | /items/:id       | Token           | id            |
+| POST          | /items           | N/A             | N/A           |
+| POST          | /items/:id       | N/A             | id            |
 
 
-Technologies used: express, mongoDB, mongoose, handlebars, bootstrap, jQuery,
-ajax, javascript, html, css.
+### Link to front-end repo
+[https://github.com/ceconley/inventory-management-system-client](https://github.com/ceconley/inventory-management-system-client)
 
-Problems to be fixed:
+### Deployed Sites
+
+##### Deployed heroku: 
+[https://pure-headland-95535.herokuapp.com](https://pure-headland-95535.herokuapp.com)
+
+##### Deployed gh-pages:
+[https://ceconley.github.io/inventory-management-system-client](https://ceconley.github.io/inventory-management-system-client)
+
+### ERD 
+
+[ERD Image](https://github.com/ceconley/inventory-management-system-client/blob/master/public/erd.jpg)
+
+
+### Technologies used
+* express
+* mongoDB
+* mongoose
+* handlebars
+* bootstrap
+* jQuery
+* ajax
+* javascript
+* html
+* css.
+
+### Problems to be fixed
 - formatting the table so currency shows propery
 
-Version 2.0:
+### Version 2.0
 - upcs require 10 digits
 - adding bar codes
 - authentication for admins
 
-User stories:
-As a user I want to be able to sign up with an account.
-I want to be able to sign in with a password.
-Once signed in, I want to be able to change my password.
-I want to be able to sign out.
-Only authenticated users will be able to work within the inventory database.
-I want to be able to create an inventory item.
-I want to be able to view 1 inventory item.
-I want to be able to view all inventory.
-I want to be able to view attributes of items based on price, quantity and other soon to be determined qualities of our products.
-I want to be able to sort products by price, quantity, and other soon to be determined qualities of our products.
-I want to be able to delete an item from inventory.
-I want each of my items to have a unique identifier which will create a link between the manufacturer’s database and my own inventory management system.
+### User stories
+* As a user I want to be able to sign up with an account.
+* I want to be able to sign in with a password.
+* Once signed in, I want to be able to change my password.
+* I want to be able to sign out.
+* Only authenticated users will be able to work within the inventory database.
+* I want to be able to create an inventory item.
+* I want to be able to view 1 inventory item.
+* I want to be able to view all inventory.
+* I want to be able to view attributes of items based on price, quantity and other soon to be determined qualities of our products.
+* I want to be able to sort products by price, quantity, and other soon to be determined qualities of our products.
+* I want to be able to delete an item from inventory.
+* I want each of my items to have a unique identifier which will create a link between the manufacturer’s database and my own inventory management system.
 
-Planning, Process, and Problem Solving:
+### Planning, Process, and Problem Solving
 
 For this project it was very important that we were all on the same page understanding the code we'd be writing. Two of the group members had a much more comfortable understanding of api's and form data implementation. From the beginning, we wanted to make sure that no one was left behind so the first steps were to gain a clear understanding of the requirements, our tables, and the minimal viable product. It was pivotal to keep these in sight at all times and remained our guiding principal throughout.
 
