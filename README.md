@@ -32,7 +32,7 @@ Users must first sign up and sign in before gaining access to inventory tools.
 
 
 ### Link to front-end repo
-[https://github.com/ceconley/inventory-management-system-client](https://github.com/ceconley/inventory-management-system-client)
+[https://github.com/team-no-demon-or-node-mon/inventory-management-system-client](https://github.com/team-no-demon-or-node-mon/inventory-management-system-client)
 
 ### Deployed Sites
 
@@ -40,11 +40,11 @@ Users must first sign up and sign in before gaining access to inventory tools.
 [https://pure-headland-95535.herokuapp.com](https://pure-headland-95535.herokuapp.com)
 
 ##### Deployed gh-pages:
-[https://ceconley.github.io/inventory-management-system-client](https://ceconley.github.io/inventory-management-system-client)
+[https://team-no-demon-or-node-mon.github.io/inventory-management-system-client/](https://team-no-demon-or-node-mon.github.io/inventory-management-system-client/)
 
 ### ERD 
 
-[ERD Image](https://github.com/ceconley/inventory-management-system-client/blob/master/public/erd.jpg)
+[ERD Image](https://github.com/team-no-demon-or-node-mon/inventory-management-system-client/blob/master/public/erd.jpg)
 
 
 ### Technologies used
